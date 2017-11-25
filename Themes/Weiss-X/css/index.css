@@ -1954,7 +1954,7 @@ p#whoisviewing
 .poster div.utemi
 {
 	width: 4px;
-	height: 55px;
+	height: 68px;
 	display:inline-block;
 	overflow: hidden;
 	float:left;
@@ -1966,15 +1966,15 @@ p#whoisviewing
 .poster div.utemi img
 {
 	width: 4px;
-	height: 55px;
+	height: 68px;
 	display:inline-block;
 	overflow: hidden;
 	float:left;
 }
 .poster div.avatar
 {
-	width: 57px;
-	height: 57px;
+	width: 70px;
+	height: 70px;
 	display:inline-block;
 	margin-right:6px;
 	overflow: hidden;
@@ -1982,8 +1982,8 @@ p#whoisviewing
 }
 .poster div.avatar img
 {
-	width: 55px;
-	height: 55px;
+	width: 68px;
+	height: 68px;
 	font: 100%/130% "Verdana", Helvetica, sans-serif;
 	background: #ffffff; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
