@@ -40,7 +40,7 @@ $txt['moderate'] = 'Moderiranje';
 $txt['save'] = 'Pošalji';
 
 $txt['modify'] = 'Uredi';
-$txt['forum_index'] = ' Naslovnica';
+$txt['forum_index'] = ' Columbia State';
 $txt['members'] = 'Članova';
 $txt['board_name'] = 'Forum';
 $txt['posts'] = 'Odgovora';
