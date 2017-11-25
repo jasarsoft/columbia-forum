@@ -244,7 +244,7 @@ function template_body_above()
 
 echo '
 	<div class="zbgroup">
-	<div class="zbgroup_text1"><div class="zbgroup_text2">',timeformat(time(),'%A - %d. %m. %Y'), '&nbsp;&bull; <font id="sat"><b>&nbsp;Ucitavanje...</b></font>
+	<div class="zbgroup_text1"><div class="zbgroup_text2">',timeformat(time(),'%A - %d. %m. %Y'), '&nbsp;
 
 <script language="JavaScript" type="text/javascript">
 function init(){
@@ -268,11 +268,10 @@ setTimeout("prikaziSat()",1000);
 prikaziSat();
 </script></div>
 	<div style="float: right; clear: right; padding-top:9px;">
-	<a href="'.$scripturl.'?action=forum">Link #1</a>
-	<a href="'.$scripturl.'?action=forum">Link #2</a>
-	<a href="'.$scripturl.'?action=forum">Link #3</a>
-	<a href="'.$scripturl.'?action=forum">Link #4</a>
-	<a href="'.$scripturl.'?action=forum">Link #5</a>
+	<a href="'.$scripturl.'?action=forum">Launcher</a>
+	<a href="'.$scripturl.'?action=forum">RolePlay</a>
+	<a href="'.$scripturl.'?action=forum">O nama</a>
+	<a href="'.$scripturl.'?action=forum">Kontakt</a>
 	</div>
 	</div>
 	</div>
@@ -301,7 +300,7 @@ prikaziSat();
 			}
 
 	// Otherwise they're a guest - this time ask them to either register or login - lazy bums...
-	else
+	/*else
 	{
 		echo '				
 		<script language="JavaScript" type="text/javascript" src="', $settings['default_theme_url'], '/sha1.js"></script>
@@ -322,7 +321,7 @@ prikaziSat();
 											<a href="', $scripturl, '?action=register">', $txt['create_account'], '</a>
 										</div>';
 
-}				echo '
+}*/				echo '
 
 			</div>
 				<div class="korisnik-avatar">';
@@ -352,7 +351,7 @@ prikaziSat();
 		echo '
 			</div>
 			<div id="logo">
-					<a href="'.$scripturl.'?action=forum" title="Zapadni Balkan SA:MP"></a>
+					<a href="'.$scripturl.'?action=forum" title="Columbia State RolePlay"></a>
 				</div>
 	</div>
 </div>
@@ -381,7 +380,7 @@ prikaziSat();
 
 <div id="wrapper">
 	<div id="header"><br/>
-	<center><b>Nakon instalacije teme ukljucite opciju "Sakriti naziv Post Grupe za grupirane clanove" u postavkama trenutne teme.</b></center>
+	<center><b></b></center>
 	</div>';
 
 	// The main content should go here.
@@ -411,9 +410,8 @@ function template_body_below()
 ', theme_copyright(), '<br />', $txt['page_created'], $context['load_time'], $txt['seconds_with'], $context['load_queries'], $txt['queries'], '';
 	echo '
 	', !empty($settings['forum_width']) ? '</div>
-   <div class="kolona-desno">VASA ZAJEDNICA &copy; Sva prava pridrzana<br/>
-   Weiss X 10.2 &copy; 2014, <a href="http://www.jadeworks.com.ba">Jade Works Studio</a><br/>
-   Footer background belongs to <a href="http://gtaforums.com/" target="_blank">GTA Forums</a></div>
+   <div class="kolona-desno">Columbia State Team &copy 2017; Sva prava zadržana<br/>
+   Theme <a href="http://www.jadeworks.com.ba">Weiss X 10.2</a> &copy; 2014, edited by the <a href="'.$scripturl.'">Columbia™</a><br/></div>
 	</div>
 </div>' : '';
 }
