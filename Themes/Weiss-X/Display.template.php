@@ -258,12 +258,16 @@ function template_main()
 
 		// Show a link to the member's profile.
 		echo '
-								', $message['member']['link'], ', ';
+								', $message['member']['link'], '';
 
 
 		// Show the member's primary group (like 'Administrator') if they have one.
 		if (!empty($message['member']['group']))
+		{
+			echo $greeting . "<br>" . PHP_EOL;
 			echo '', $message['member']['group'], '</h4><ul class="reset smalltext" id="msg_', $message['id'], '_extra_info">';
+		}
+			
 
 
 			// Show the post group if and only if they have no other group or the option is on, and they are in a post group.
@@ -409,7 +413,7 @@ function template_main()
 		echo '
 								<div class="inner" id="msg_', $message['id'], '"', '>', $message['body'], '</div>
 							</div>
-							<img src="', $settings['images_url'], '/icons/modify_inline.gif" alt="', $txt['modify_msg'], '" title="', $txt['modify_msg'], '" class="modifybutton" id="modify_button_', $message['id'], '" style="cursor: ', ($context['browser']['is_ie5'] || $context['browser']['is_ie5.5'] ? 'hand' : 'pointer'), '; display: none;" onclick="oQuickModify.modifyMsg(\'', $message['id'], '\')" />';
+							<img/>';
 							
 
 		// Show "� Last Edit: Time by Person �" if this post was edited.
